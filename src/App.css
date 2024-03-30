@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  width: 600px;
+  pointer-events: none;
+}
+
+.App-main {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.title {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  margin-top: 80px; /* Remove default margin to avoid extra space */
+  font-size: 32px;
+}
+
+.form {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.button {
+  margin: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  margin: 20px 0 20px 0;
+  font-size: 22px;
+  justify-items: left;
+  align-items: center;
+}
+
+input {
+  width: 50px;
+  height: 30px;
+}
+
+.label {
+  text-align: left;
+  text-indent: 20px;
+}
+
+.input {
+  text-align: left;
+  text-indent: 25px;
+}
+
+.calculate-box {
+  border: 1px solid black;
+  width: 500px;
+  height: 240px;
+  margin: 20px auto;
+}
+
+.error {
+  height: 20px;
+  color: red;
+  font-size: 16px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .App-logo {
+    width: 481px;
+  }
+
+  .title h1 {
+    margin-top: 60px; /* Remove default margin to avoid extra space */
+    font-size: 28px;
+  }
+
+  .container {
+    margin: 15px 0 15px 0;
+    font-size: 18px;
+  }
+
+  .calculate-box {
+    width: 450px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .App-logo {
+    width: 100%;
+  }
+
+  .title {
+    height: 80px;
+    display: flex;
+  }
+
+  .title h1 {
+    margin-top: 40px; /* Remove default margin to avoid extra space */
+    font-size: 20px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin: 10px 0 10px 0;
+    font-size: 12px;
+    justify-items: left;
+    align-items: center;
+  }
+
+  .inputboxes {
+    position: relative;
+  }
+
+  .input {
+    position:relative;
+    width: 100%;
+    bottom: 15px;
+  }
+
+  .calculate-box {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  input {
+    width: 60px;
+    height: 25px;
+  }
+  
+  .input {
+    text-indent: 20px;
+  }
+
+}
