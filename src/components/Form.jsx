@@ -39,7 +39,7 @@ function Form() {
       const { distance, hour, minute, second, paceMinute, paceSecond } =
         formData;
 
-      const url = `https://route.pacecalculatorservice.com/calculate-pace?distance=${distance}&hour=${hour}&minute=${minute}&second=${second}&paceMinute=${paceMinute}&paceSecond=${paceSecond}`;
+      const url = `http://libertyrunners-app.com/calculate-pace?distance=${distance}&hour=${hour}&minute=${minute}&second=${second}&paceMinute=${paceMinute}&paceSecond=${paceSecond}`;
 
       const response = await fetch(url, {
         method: "GET",
