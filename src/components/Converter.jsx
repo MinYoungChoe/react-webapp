@@ -133,7 +133,7 @@ const Converter = () => {
           ) : (
             <div className="label">
               <label>Speed:</label>
-              <input
+              <input 
                 className="input"
                 type="number"
                 placeholder={formData.fromUnit}
