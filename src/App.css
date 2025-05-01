@@ -50,6 +50,16 @@
   align-items: center;
 }
 
+.converter-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  margin: 20px 0 20px 0;
+  font-size: 22px;
+  justify-items: left;
+  align-items: center;
+}
+
 input {
   width: 50px;
   height: 30px;
@@ -78,6 +88,13 @@ select {
   border-radius: 20px; /* Adjust the border-radius to make the container round */
 }
 
+.converter-box {
+  border: 2px solid black;
+  width: 500px;
+  height: 300px;
+  margin: 20px auto;
+  border-radius: 20px; /* Adjust the border-radius to make the container round */
+}
 
 .error {
   height: 20px;

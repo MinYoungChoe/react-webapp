@@ -79,10 +79,11 @@ const Converter = () => {
   return (
     <div className="form">
       <form>
-        <div className="calculate-box container">
+        <div className="converter-box converter-container">
           <div className="label">
             <label>From:</label>
           </div>
+          <div className="input">
           <select
             value={formData.fromUnit}
             onChange={(e) => handleInputChange("fromUnit", e.target.value)}
@@ -91,10 +92,14 @@ const Converter = () => {
             <option value="kph">kph</option>
             <option value="mph">mph</option>
           </select>
+            
+
+          </div>
 
           <div className="label">
             <label>To:</label>
           </div>
+          <div className="input">
           <select
             value={formData.toUnit}
             onChange={(e) => handleInputChange("toUnit", e.target.value)}
@@ -105,11 +110,17 @@ const Converter = () => {
               </option>
             ))}
           </select>
-
+          </div>
           {formData.fromUnit === "minPerKm" ? (
+            <>
             <div className="label">
               <label>Pace:</label>
-              <div className="input">
+              </div>
+
+
+
+              <div className="inputboxes">
+                    <div className="input">
                 <input
                   type="number"
                   placeholder="min"
@@ -127,10 +138,16 @@ const Converter = () => {
                   value={formData.seconds}
                   onChange={(e) => handleInputChange("seconds", e.target.value)}
                 />
-              </div>
               &nbsp;/km&nbsp;
+              </div>
             </div>
+            <div className="label">
+            <label>Speed :</label>
+          </div>
+            </>
+            
           ) : (
+            <>
             <div className="label">
               <label>Speed:</label>
               <input 
@@ -141,9 +158,14 @@ const Converter = () => {
                 onChange={(e) => handleInputChange("speed", e.target.value)}
               />
             </div>
+             <div className="label">
+             <label>Pace:</label>
+             </div>
+             </>
           )}
+           
 
-          {result && <p className="result-text">{result}</p>}
+          {result && <p className="result-text input">{result}</p>}
         </div>
         <div className="error">{errorMessage}</div>
 
