@@ -3,7 +3,7 @@ import React from "react";
 import Logo from "./components/Logo";
 import Title from "./components/Title";
 import Form from "./components/Form";
-
+import Converter from "./components/Converter";
 
 function App() {
   
@@ -11,8 +11,10 @@ function App() {
     <div className="App">
       <Logo />
       <div className="App-main">
-        <Title />
+        <Title title={"Pace Calculator"} />
         <Form />
+        <Title title={"Pace Converter"} />
+        <Converter />
       </div>
     </div>
   );

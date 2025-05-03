@@ -1,9 +1,9 @@
 import React from "react";
 
-function Title() {
+function Title({title}) {
   return (
     <div className="title">
-      <h1 className="title-text">Pace Calculator</h1>
+      <h1 className="title-text">{title}</h1>
     </div>
   );
 }
