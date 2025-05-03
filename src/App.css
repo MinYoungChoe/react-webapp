@@ -177,6 +177,10 @@ select {
     bottom: 15px;
   }
 
+  .converter-input{
+    position:static;
+  }
+
  
   .calculate-box {
     width: 95%;

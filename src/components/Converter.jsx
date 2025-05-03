@@ -99,7 +99,7 @@ const Converter = () => {
           <div className="label">
             <label>From :</label>
           </div>
-          <div className="input">
+          <div className="input converter-input">
             <select
               value={formData.fromUnit}
               onChange={(e) =>
@@ -116,7 +116,7 @@ const Converter = () => {
           <div className="label">
             <label>To :</label>
           </div>
-          <div className="input">
+          <div className="input converter-input">
             <select
               value={formData.toUnit}
               onChange={(e) =>
@@ -138,7 +138,7 @@ const Converter = () => {
                 <label>Pace :</label>
               </div>
               <div className="inputboxes">
-                <div className="input">
+                <div className="input converter-input">
                   <input
                     type="number"
                     placeholder="min"
@@ -175,7 +175,7 @@ const Converter = () => {
                 <label>Speed :</label>
               </div>
               <div className="inputboxes">
-                <div className="input">
+                <div className="input converter-input">
                   <input
                     type="number"
                     placeholder={formData.fromUnit}
@@ -197,7 +197,7 @@ const Converter = () => {
           )}
 
           {/* Display result */}
-          {result && <p className="result-text input">{result}</p>}
+          {result && <p className="result-text input converter-input">{result}</p>}
         </div>
 
         {/* Error message if input is invalid */}
