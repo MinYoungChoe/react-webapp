@@ -97,7 +97,7 @@ const Converter = () => {
         <div className="converter-box converter-container">
           {/* From Unit Selection */}
           <div className="label">
-            <label>From:</label>
+            <label>From :</label>
           </div>
           <div className="input">
             <select
@@ -114,7 +114,7 @@ const Converter = () => {
 
           {/* To Unit Selection */}
           <div className="label">
-            <label>To:</label>
+            <label>To :</label>
           </div>
           <div className="input">
             <select
@@ -135,7 +135,7 @@ const Converter = () => {
           {formData.fromUnit === "minPerKm" ? (
             <>
               <div className="label">
-                <label>Pace:</label>
+                <label>Pace :</label>
               </div>
               <div className="inputboxes">
                 <div className="input">
@@ -149,7 +149,7 @@ const Converter = () => {
                       handleInputChange("minutes", e.target.value)
                     }
                   />
-                  <span>:</span>
+                  <span> : </span>
                   <input
                     type="number"
                     placeholder="sec"
@@ -172,7 +172,7 @@ const Converter = () => {
             // Input field for speed
             <>
               <div className="label">
-                <label>Speed:</label>
+                <label>Speed :</label>
               </div>
               <div className="inputboxes">
                 <div className="input">
@@ -191,7 +191,7 @@ const Converter = () => {
               </div>
 
               <div className="label">
-                <label>Pace:</label>
+                <label>Pace :</label>
               </div>
             </>
           )}
