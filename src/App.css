@@ -122,6 +122,13 @@ select {
     margin: 0 auto;
   }
 
+  .converter-container {
+    margin: 15px 0 15px 0;
+    font-size: 18px;
+    width: 450px;
+    margin: 0 auto;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -149,6 +156,17 @@ select {
     align-items: center;
   }
 
+  .converter-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px 0 10px 0;
+    font-size: 12px;
+    justify-items: left;
+    align-self: center;
+
+  }
+
   .inputboxes {
     position: relative;
   }
@@ -159,7 +177,17 @@ select {
     bottom: 15px;
   }
 
+  .converter-input{
+    position:static;
+  }
+
+ 
   .calculate-box {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .converter-container {
     width: 95%;
     margin: 10px auto;
   }
