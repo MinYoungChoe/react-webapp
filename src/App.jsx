@@ -4,6 +4,8 @@ import Logo from "./components/Logo";
 import Title from "./components/Title";
 import Form from "./components/Form";
 import Converter from "./components/Converter";
+import Icon from "./components/Icon"
+
 
 function App() {
   
@@ -15,6 +17,7 @@ function App() {
         <Form />
         <Title title={"Pace Converter"} />
         <Converter />
+        <Icon />
       </div>
     </div>
   );
